@@ -105,7 +105,14 @@ body {
 }
 
 .selected {
+  border-radius: 50%;
   background-color: var(--light-grey);
+  color: white;
+}
+
+.selected:hover {
+  cursor: pointer;
+  background-color: var(--orange);
   color: white;
 }
 
