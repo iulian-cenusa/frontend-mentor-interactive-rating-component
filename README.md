@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/iulian-cenusa/frontend-mentor-interactive-rating-component)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://iulian-cenusa.github.io/frontend-mentor-interactive-rating-component/)
 
 ## My process
 
