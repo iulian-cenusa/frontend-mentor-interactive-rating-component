@@ -16,3 +16,12 @@
 .prettierignore
 
 .dccache
+
+# IntelliJ speciffic
+.idea/
+
+# Maven build files
+target/
+
+# VSCode files
+.vscode/
