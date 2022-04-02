@@ -20,8 +20,10 @@
   </head>
   <body>
     <main id="main">
-      <section class="container ratingboard">
-        <div class="circle" id="star"></div>
+      <section class="container" id="ratingboard">
+        <div class="circle" id="star">
+          <img src="./images/icon-star.svg" alt="star image" />
+        </div>
 
         <h2 class="title">How did we do?</h2>
 
@@ -30,22 +32,30 @@
           is appreciated to help us improve our offering!
         </p>
 
-        <div class="circle" id="one">1</div>
+        <div class="circle-bar">
+          <div class="circle" id="one"><p>1</p></div>
 
-        <div class="circle" id="two">2</div>
+          <div class="circle" id="two"><p>2</p></div>
 
-        <div class="circle" id="three">3</div>
+          <div class="circle" id="three"><p>3</p></div>
 
-        <div class="circle" id="four">4</div>
+          <div class="circle" id="four"><p>4</p></div>
 
-        <div class="circle" id="five">5</div>
-
+          <div class="circle" id="five"><p>5</p></div>
+        </div>
         <button id="btn">Submit</button>
       </section>
 
-      <section class="container validateboard">
+      <section class="container hidden" id="validateboard">
+        <div class="illustration-container">
+          <img
+            id="thank-you-illustration"
+            src="./images/illustration-thank-you.svg"
+            alt="thank you illustration"
+          />
+        </div>
         <div id="selected-rating-container">
-          You selected <span id="selected-rating"></span> out of 5
+          <p>You selected <span id="selected-rating">#</span> out of 5</p>
         </div>
         <h2 class="title">Thank you!</h2>
         <p class="text">
