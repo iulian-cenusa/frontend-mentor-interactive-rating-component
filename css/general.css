@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;800&display=swap");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --dark-light-blue: hsl(212, 14%, 21%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/*HTML and Body*/
+html {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--very-dark-blue);
+  color: var(--light-grey);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main elements*/
+#main {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  background-color: var(--dark-blue);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#ratingboard,
+#validateboard {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#ratingboard {
+  display: flex;
+  text-align: left;
+}
+
+#validateboard {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* Title element */
+.title {
+  color: white;
+}
+
+/* Text element */
+.text {
+  margin-bottom: 1rem;
+}
+
+/* Round elements */
+.circle-bar {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: var(--dark-light-blue);
+  width: 40px;
+  height: 40px;
+}
+
+.circle:hover {
+  cursor: pointer;
+  background-color: var(--orange);
+  color: white;
+}
+
+.circle p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+#star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  background-color: var(--light-grey);
+  color: white;
+}
+
+/*Buttons*/
+#btn {
+  background-color: var(--orange);
+  width: 100%;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  text-align: center;
+}
+
+#btn:hover {
+  background-color: white;
+  color: var(--orange);
+}
+
+/* Thank-you-illustration image*/
+.illustration-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+/* Selected rating */
+#selected-rating-container {
+  padding: 0 1rem;
+  color: var(--orange);
+  background-color: var(--dark-light-blue);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  #main {
+    width: 375px;
+  }
+}
